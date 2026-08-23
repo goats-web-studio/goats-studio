@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GOATS — разработка продуктов под ключ</title>
+<meta name="description" content="Небольшая команда разработчиков. Telegram-боты, веб-сервисы, мобильные приложения, AI-интеграции. Проектируем, разрабатываем и запускаем.">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="GOATS — разрабатываем продукты, которыми пользуются">
+<meta property="og:description" content="От Telegram-ботов и веб-сервисов до мобильных приложений.">
+<meta property="og:locale" content="ru_RU">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230B0D13'/><circle cx='50' cy='50' r='16' fill='%233D5AFE'/></svg>">
+</head>
+<body>
+
+<a class="skip" href="#services">Перейти к содержимому</a>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#home" aria-label="GOATS — на главную">
+      <span class="logo__mark"></span>
+      <span class="logo__text">GOATS</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#home">Главная</a>
+      <a href="#services">Услуги</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#about">О нас</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--sm btn--dark" href="#contact">Обсудить проект</a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<main>
+
+  <!-- 1. HERO -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow reveal">Команда разработки</p>
+        <h1 class="hero__title reveal" style="--d:.05s">Разрабатываем продукты,<br>которыми <span class="accent-text">пользуются</span>.</h1>
+        <p class="hero__sub reveal" style="--d:.1s">От Telegram-ботов и веб-сервисов до мобильных приложений. Берем идею, проектируем, разрабатываем и запускаем.</p>
+        <div class="hero__cta reveal" style="--d:.15s">
+          <a class="btn btn--dark" href="#contact">Обсудить проект</a>
+          <a class="btn btn--ghost" href="#cases">Наши работы</a>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal" style="--d:.2s" aria-hidden="true">
+        <div class="dots"></div>
+        <div class="panel panel--code">
+          <div class="panel__bar"><i></i><i></i><i></i></div>
+          <div class="panel__body">
+            <span class="ln w70"></span>
+            <span class="ln w45 accent"></span>
+            <span class="ln w85"></span>
+            <span class="ln w30"></span>
+            <span class="ln w60"></span>
+            <span class="ln w50 accent"></span>
+            <span class="ln w75"></span>
+          </div>
+        </div>
+        <div class="panel panel--chip">
+          <span class="pulse"></span>
+          <div>
+            <b>deploy: success</b>
+            <small>production · 1.2s</small>
+          </div>
+        </div>
+        <div class="panel panel--phone">
+          <span class="ln w60"></span>
+          <span class="ln w90"></span>
+          <span class="ln w40 accent"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul class="facts reveal" style="--d:.25s">
+        <li><b>6</b><span>запущенных проектов</span></li>
+        <li><b>App Store</b><span>приложение опубликовано</span></li>
+        <li><b>Web · iOS · Android</b><span>платформы, под которые собираем</span></li>
+        <li><b>Под ключ</b><span>дизайн, разработка и запуск</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 2. SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Что мы делаем</p>
+        <h2 class="section__title">Пять направлений,<br>один подход к работе.</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <span class="card__num">01</span>
+          <h3>Telegram-боты</h3>
+          <p>Автоматизация, AI, внутренние системы, интеграции.</p>
+        </article>
+        <article class="card reveal" style="--d:.05s">
+          <span class="card__num">02</span>
+          <h3>Веб-приложения</h3>
+          <p>CRM, личные кабинеты, сервисы и SaaS-продукты.</p>
+        </article>
+        <article class="card reveal" style="--d:.1s">
+          <span class="card__num">03</span>
+          <h3>Мобильные приложения</h3>
+          <p>iOS и Android-приложения под конкретные задачи.</p>
+        </article>
+        <article class="card reveal" style="--d:.15s">
+          <span class="card__num">04</span>
+          <h3>AI-интеграции</h3>
+          <p>Добавляем искусственный интеллект в продукты и автоматизируем процессы.</p>
+        </article>
+        <article class="card card--wide reveal" style="--d:.2s">
+          <span class="card__num">05</span>
+          <h3>Разработка под ключ</h3>
+          <p>От идеи и дизайна до готового продукта и запуска.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CASES -->
+  <section class="section section--cases" id="cases">
+    <div class="container">
+      <div class="section__head section__head--row reveal">
+        <div>
+          <p class="eyebrow">Кейсы</p>
+          <h2 class="section__title">Проекты, которые<br>работают прямо сейчас.</h2>
+        </div>
+        <p class="section__note">Ниже — задача, с которой пришли, и что получилось на выходе.</p>
+      </div>
+
+      <div class="cases">
+
+        <!-- featured -->
+        <a class="case case--featured reveal" href="https://www.mangystau-triathlon.kz" target="_blank" rel="noopener noreferrer">
+          <div class="case__media">
+            <div class="mock mock--browser">
+              <div class="mock__bar"><i></i><i></i><i></i><span class="mock__url">mangystau-triathlon.kz</span></div>
+              <img class="mock__shot" src="assets/triathlon.png" alt="" loading="lazy" decoding="async">
+              <div class="mock__skeleton mock__skeleton--land">
+                <span class="ln w45 lg"></span>
+                <span class="ln w70"></span>
+                <div class="row"><span class="pillbar pillbar--accent"></span><span class="pillbar"></span></div>
+                <span class="bar bar--sm"></span>
+                <div class="row"><span class="tile"></span><span class="tile"></span><span class="tile"></span></div>
+              </div>
+            </div>
+            <span class="case__open">Открыть проект</span>
+          </div>
+          <div class="case__body">
+            <div class="case__top">
+              <h3 class="case__title">Aktau Triathlon Fest</h3>
+              <span class="case__kind">Web · Events</span>
+            </div>
+            <div class="task">
+              <span class="lbl">Задача</span>
+              <p>Собрать участников на первый триатлон в регионе и увести регистрацию из таблиц и переписки.</p>
+            </div>
+            <div class="res">
+              <span class="lbl lbl--accent">Результат</span>
+              <!-- цифра-заглушка: подставьте реальные данные -->
+              <span class="res__val" data-count="70">70</span>
+              <span class="res__label">участников зарегистрировались онлайн — списки и оплаты собрались сами</span>
+            </div>
+            <div class="case__foot">
+              <span class="case__link">mangystau-triathlon.kz <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="case__stack">Next.js · Supabase · Tailwind · Vercel</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="case reveal" href="https://apps.apple.com/kz/app/carte-qr-%D0%BC%D0%B5%D0%BD%D1%8E/id6783817848" target="_blank" rel="noopener noreferrer">
+          <div class="case__media">
+            <div class="mock mock--phone">
+              <img class="mock__shot" src="assets/carte.png" alt="" loading="lazy" decoding="async">
+              <div class="mock__skeleton">
+                <span class="ln w40"></span>
+                <span class="bar"></span>
+                <span class="ln w70"></span>
+                <span class="ln w55"></span>
+                <span class="bar bar--sm"></span>
+                <span class="ln w60 accent"></span>
+              </div>
+            </div>
+            <span class="case__open">Открыть проект</span>
+          </div>
+          <div class="case__body">
+            <div class="case__top">
+              <h3 class="case__title">CARTE — QR меню</h3>
+              <span class="case__kind">iOS · Android</span>
+            </div>
+            <div class="task">
+              <span class="lbl">Задача</span>
+              <p>Убрать бумажные меню: заведение должно менять блюда и цены само, без дизайнера и типографии.</p>
+            </div>
+            <div class="res">
+              <span class="lbl lbl--accent">Результат</span>
+              <span class="res__val">App&nbsp;Store</span>
+              <span class="res__label">приложение опубликовано — меню обновляется без перепечатки тиража</span>
+            </div>
+            <div class="case__foot">
+              <span class="case__link">App Store <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="case__stack">Flutter · Golang</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="case reveal" href="https://nutrient.10k.kz/login" target="_blank" rel="noopener noreferrer">
+          <div class="case__media">
+            <div class="mock mock--browser">
+              <div class="mock__bar"><i></i><i></i><i></i><span class="mock__url">nutrient.10k.kz</span></div>
+              <img class="mock__shot" src="assets/nutrient.png" alt="" loading="lazy" decoding="async">
+              <div class="mock__skeleton mock__skeleton--dash">
+                <div class="col">
+                  <span class="ln w70"></span><span class="ln w50"></span><span class="ln w60"></span>
+                </div>
+                <div class="col col--main">
+                  <span class="bar"></span>
+                  <div class="row"><span class="tile"></span><span class="tile tile--accent"></span><span class="tile"></span></div>
+                  <span class="ln w80"></span><span class="ln w45"></span>
+                </div>
+              </div>
+            </div>
+            <span class="case__open">Открыть проект</span>
+          </div>
+          <div class="case__body">
+            <div class="case__top">
+              <h3 class="case__title">Nutrient</h3>
+              <span class="case__kind">Web · AI</span>
+            </div>
+            <div class="task">
+              <span class="lbl">Задача</span>
+              <p>Считать норму и подбирать рацион автоматически — вручную это занимало у специалиста часы.</p>
+            </div>
+            <div class="res">
+              <span class="lbl lbl--accent">Результат</span>
+              <span class="res__val">1 минута</span>
+              <span class="res__label">на персональный план питания вместо часа ручных расчётов</span>
+            </div>
+            <div class="case__foot">
+              <span class="case__link">nutrient.10k.kz <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="case__stack">Vue 3 · PHP · AI</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- featured, зеркальный -->
+        <a class="case case--featured case--rev reveal" href="https://www.aqua-gym.kz" target="_blank" rel="noopener noreferrer">
+          <div class="case__media">
+            <div class="mock mock--browser">
+              <div class="mock__bar"><i></i><i></i><i></i><span class="mock__url">aqua-gym.kz</span></div>
+              <img class="mock__shot" src="assets/aquagym.png" alt="" loading="lazy" decoding="async">
+              <div class="mock__skeleton mock__skeleton--land">
+                <span class="ln w60 lg"></span>
+                <span class="bar"></span>
+                <div class="row"><span class="tile"></span><span class="tile tile--accent"></span><span class="tile"></span></div>
+                <span class="ln w50"></span>
+              </div>
+            </div>
+            <span class="case__open">Открыть проект</span>
+          </div>
+          <div class="case__body">
+            <div class="case__top">
+              <h3 class="case__title">AquaGym</h3>
+              <span class="case__kind">Web · SEO</span>
+            </div>
+            <div class="task">
+              <span class="lbl">Задача</span>
+              <p>Создать цифровое присутствие комплекса в Актау: до этого клиенты находили его только через знакомых и Instagram.</p>
+            </div>
+            <div class="res">
+              <span class="lbl lbl--accent">Результат</span>
+              <!-- цифра-заглушка: подставьте реальные данные -->
+              <span class="res__val">Топ-3</span>
+              <span class="res__label">в поиске по запросам про бассейн в Актау — запись уходит в WhatsApp</span>
+            </div>
+            <div class="case__foot">
+              <span class="case__link">aqua-gym.kz <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="case__stack">Next.js · Tailwind · Vercel · SEO</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="case reveal" href="https://globalexportpartners.kz/" target="_blank" rel="noopener noreferrer">
+          <div class="case__media">
+            <div class="mock mock--browser">
+              <div class="mock__bar"><i></i><i></i><i></i><span class="mock__url">globalexportpartners.kz</span></div>
+              <img class="mock__shot" src="assets/gep.png" alt="" loading="lazy" decoding="async">
+              <div class="mock__skeleton mock__skeleton--land">
+                <span class="ln w55 lg"></span>
+                <span class="ln w75"></span>
+                <div class="row"><span class="pillbar"></span><span class="pillbar pillbar--accent"></span></div>
+                <div class="row"><span class="tile"></span><span class="tile"></span><span class="tile"></span></div>
+              </div>
+            </div>
+            <span class="case__open">Открыть проект</span>
+          </div>
+          <div class="case__body">
+            <div class="case__top">
+              <h3 class="case__title">Global Export Partners</h3>
+              <span class="case__kind">Web</span>
+            </div>
+            <div class="task">
+              <span class="lbl">Задача</span>
+              <p>Показать поставки промышленного оборудования из Китая так, чтобы предприятию было понятно, с кем оно работает.</p>
+            </div>
+            <div class="res">
+              <span class="lbl lbl--accent">Результат</span>
+              <!-- цифра-заглушка: подставьте реальные данные -->
+              <span class="res__val">Заявки с сайта</span>
+              <span class="res__label">вместо PDF-презентации и переписки по личным контактам</span>
+            </div>
+            <div class="case__foot">
+              <span class="case__link">globalexportpartners.kz <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="case__stack">Vue 3 · Node.js</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="case reveal" href="https://smartziyatker.kz/" target="_blank" rel="noopener noreferrer">
+          <div class="case__media">
+            <div class="mock mock--browser">
+              <div class="mock__bar"><i></i><i></i><i></i><span class="mock__url">smartziyatker.kz</span></div>
+              <img class="mock__shot" src="assets/smartziyatker.png" alt="" loading="lazy" decoding="async">
+              <div class="mock__skeleton mock__skeleton--dash">
+                <div class="col">
+                  <span class="ln w60 accent"></span><span class="ln w80"></span><span class="ln w40"></span>
+                </div>
+                <div class="col col--main">
+                  <div class="row"><span class="tile"></span><span class="tile"></span></div>
+                  <span class="bar bar--sm"></span>
+                  <span class="ln w70"></span><span class="ln w50"></span>
+                </div>
+              </div>
+            </div>
+            <span class="case__open">Открыть проект</span>
+          </div>
+          <div class="case__body">
+            <div class="case__top">
+              <h3 class="case__title">Smart Ziyatker</h3>
+              <span class="case__kind">EdTech · Web</span>
+            </div>
+            <div class="task">
+              <span class="lbl">Задача</span>
+              <p>Перенести обучение в онлайн: материалы, задания и прогресс учеников жили в чатах и файлах.</p>
+            </div>
+            <div class="res">
+              <span class="lbl lbl--accent">Результат</span>
+              <!-- цифра-заглушка: подставьте реальные данные -->
+              <span class="res__val">1 кабинет</span>
+              <span class="res__label">для учеников и преподавателей вместо чатов и таблиц</span>
+            </div>
+            <div class="case__foot">
+              <span class="case__link">smartziyatker.kz <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="case__stack">React · Python</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PROCESS -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Как мы работаем</p>
+        <h2 class="section__title">Четыре шага<br>от задачи до запуска.</h2>
+      </div>
+
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step__num">01</span>
+          <div>
+            <h3>Обсуждаем задачу</h3>
+            <p>Понимаем, что именно нужно сделать и какой результат нужен.</p>
+          </div>
+        </li>
+        <li class="step reveal" style="--d:.05s">
+          <span class="step__num">02</span>
+          <div>
+            <h3>Планируем решение</h3>
+            <p>Определяем стек, архитектуру и этапы разработки.</p>
+          </div>
+        </li>
+        <li class="step reveal" style="--d:.1s">
+          <span class="step__num">03</span>
+          <div>
+            <h3>Разрабатываем</h3>
+            <p>Регулярно показываем прогресс и двигаемся по проекту.</p>
+          </div>
+        </li>
+        <li class="step reveal" style="--d:.15s">
+          <span class="step__num">04</span>
+          <div>
+            <h3>Запускаем</h3>
+            <p>Помогаем довести продукт до рабочего запуска.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="about reveal">
+        <p class="about__text">Мы небольшая команда. Над проектом работают те же люди, с которыми вы обсуждаете задачу — без прослойки менеджеров и передачи задач между отделами.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. STACK -->
+  <section class="section section--stack">
+    <div class="container">
+      <div class="stack reveal">
+        <p class="eyebrow">Стек</p>
+        <ul class="stack__list">
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Vue</li>
+          <li>Node.js</li>
+          <li>Python</li>
+          <li>PHP</li>
+          <li>Golang</li>
+          <li>Flutter</li>
+          <li>Supabase</li>
+          <li>PostgreSQL</li>
+          <li>SQL</li>
+          <li>Telegram API</li>
+          <li>AI / LLM</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CTA -->
+  <section class="section cta" id="contact">
+    <div class="container cta__inner reveal">
+      <div class="cta__left">
+        <h2 class="cta__title">Есть идея<br>или задача?</h2>
+        <p class="cta__text">Расскажите, что хотите сделать. Поможем превратить это в работающий продукт.</p>
+        <a class="btn btn--accent btn--lg" href="https://t.me/Ram_1465" target="_blank" rel="noopener noreferrer">Обсудить проект</a>
+      </div>
+
+      <div class="contacts">
+        <a class="contact" href="https://t.me/Ram_1465" target="_blank" rel="noopener noreferrer">
+          <span class="contact__label">Telegram</span>
+          <span class="contact__value">@Ram_1465</span>
+        </a>
+        <!-- Почта — раскомментируйте и подставьте адрес:
+        <a class="contact" href="mailto:hello@example.kz">
+          <span class="contact__label">Почта</span>
+          <span class="contact__value">hello@example.kz</span>
+        </a>
+        -->
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a class="logo" href="#home">
+      <span class="logo__mark"></span>
+      <span class="logo__text">GOATS</span>
+    </a>
+    <p class="footer__copy">© <span id="year">2026</span> — разработка продуктов под ключ</p>
+    <a class="footer__tg" href="https://t.me/Ram_1465" target="_blank" rel="noopener noreferrer">@Ram_1465</a>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
