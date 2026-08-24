@@ -5,12 +5,14 @@ import { isLocale } from '@/i18n/config';
 import { site, telegramUrl } from '@/content/site';
 
 import { ScrollEffects } from '@/components/ScrollEffects';
+import { PointerEffects } from '@/components/PointerEffects';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { Pain } from '@/components/Pain';
 import { Services } from '@/components/Services';
 import { Packages } from '@/components/Packages';
 import { Cases } from '@/components/Cases';
+import { CtaStrip } from '@/components/CtaStrip';
 import { Process } from '@/components/Process';
 import { WhyUs } from '@/components/WhyUs';
 import { StackBlock } from '@/components/StackBlock';
@@ -31,8 +33,9 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
     name: 'GOATS',
     description: t.meta.description,
     url: `${site.url}/${locale}`,
+    /* Без почтового адреса: студия работает удалённо, привязка к городу
+       только сузила бы выдачу до одного региона. */
     areaServed: 'KZ',
-    address: { '@type': 'PostalAddress', addressLocality: 'Aktau', addressCountry: 'KZ' },
     sameAs: [telegramUrl],
   };
 
@@ -50,6 +53,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <Services t={t} />
         <Packages t={t} locale={locale} />
         <Cases t={t} />
+        <CtaStrip t={t} />
         <Process t={t} />
         <WhyUs t={t} />
         <StackBlock t={t} />
@@ -60,6 +64,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       <Footer t={t} />
       <MobileBar t={t} />
       <ScrollEffects />
+      <PointerEffects />
 
       <script
         type="application/ld+json"

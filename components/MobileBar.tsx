@@ -6,7 +6,7 @@ export function MobileBar({ t }: { t: Dict }) {
   return (
     <div className="mbar">
       <a
-        className="btn btn--dark mbar__btn"
+        className="btn btn--accent mbar__btn btn--arrow"
         href={telegramUrl}
         target="_blank"
         rel="noopener noreferrer"

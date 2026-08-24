@@ -44,7 +44,7 @@ export function Header({ t, locale }: { t: Dict; locale: Locale }) {
 
         <div className="header__actions">
           <LangSwitch locale={locale} label={t.common.language} />
-          <a className="btn btn--sm btn--dark" href="#contact">
+          <a className="btn btn--sm btn--accent" href="#contact">
             {t.common.discuss}
           </a>
           <button

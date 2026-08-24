@@ -7,7 +7,6 @@
 |---------------------|------------------------|----------|
 | `triathlon.jpg`     | Aktau Triathlon Fest   | первый экран сайта |
 | `carte.jpg`         | CARTE — QR меню        | промо-кадр из App Store |
-| `nutrient.jpg`      | Nutrient               | кабинет, `/home` |
 | `aquagym.jpg`       | AquaGym                | первый экран сайта |
 | `gep.jpg`           | Global Export Partners | первый экран сайта |
 | `smartziyatker.jpg` | Smart Ziyatker         | первый экран сайта |
@@ -22,13 +21,6 @@ JPEG качества 82. PNG для скриншотов с фотографи�
 
 Кадр обрезается по верхнему краю (`object-position: top center`),
 так что первый экран виден целиком.
-
-## Что стоит починить на стороне проектов
-
-- **nutrient.10k.kz** — истёк SSL-сертификат (`NET::ERR_CERT_DATE_INVALID`).
-  Посетитель, пришедший из портфолио, видит предупреждение браузера вместо сайта.
-  Там же интерфейс подписан «Joozlet Marketplace», а карточка кейса называется
-  Nutrient — стоит свести названия.
 
 ## CARTE
 

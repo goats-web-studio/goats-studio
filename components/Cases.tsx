@@ -30,7 +30,7 @@ function Skeleton({ item }: { item: CaseItem }) {
     );
   }
 
-  if (item.id === 'nutrient' || item.id === 'smartziyatker') {
+  if (item.id === 'smartziyatker') {
     return (
       <div className="mock__skeleton mock__skeleton--dash">
         <div className="col">

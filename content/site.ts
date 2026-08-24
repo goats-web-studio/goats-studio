@@ -11,7 +11,6 @@ export const telegramUrl = `https://t.me/${site.telegram}`;
 export type CaseId =
   | 'triathlon'
   | 'carte'
-  | 'nutrient'
   | 'aquagym'
   | 'gep'
   | 'smartziyatker';
@@ -33,6 +32,9 @@ export type CaseItem = {
   count?: number;
 };
 
+/* Сетка кейсов — две колонки, крупный кейс занимает обе.
+   Пустых мест быть не должно: число обычных кейсов обязано быть чётным.
+   Сейчас 1 крупный + 4 обычных = три полностью заполненных ряда. */
 export const cases: CaseItem[] = [
   {
     id: 'triathlon',
@@ -54,21 +56,11 @@ export const cases: CaseItem[] = [
     promo: true,
   },
   {
-    id: 'nutrient',
-    /* /home, а не /login: экран входа как витрина кейса ничего не показывает. */
-    href: 'https://nutrient.10k.kz/home',
-    domain: 'nutrient.10k.kz',
-    shot: '/cases/nutrient.jpg',
-    stack: 'Vue 3 · PHP · AI',
-  },
-  {
     id: 'aquagym',
     href: 'https://www.aqua-gym.kz',
     domain: 'aqua-gym.kz',
     shot: '/cases/aquagym.jpg',
     stack: 'Next.js · Tailwind · Vercel · SEO',
-    featured: true,
-    reversed: true,
   },
   {
     id: 'gep',

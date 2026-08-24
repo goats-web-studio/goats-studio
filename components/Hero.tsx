@@ -1,5 +1,12 @@
 import type { Dict } from '@/i18n/dictionaries';
-import { telegramUrl } from '@/content/site';
+import { cases, telegramUrl } from '@/content/site';
+import { HeroCanvas } from './HeroCanvas';
+
+/* Домены запущенных проектов — соцдоказательство в первом экране:
+   конкретные адреса убеждают лучше, чем обещание «делаем качественно». */
+const liveDomains = cases
+  .map((item) => item.domain)
+  .filter((domain): domain is string => domain !== null);
 
 export function Hero({ t }: { t: Dict }) {
   return (
@@ -18,7 +25,12 @@ export function Hero({ t }: { t: Dict }) {
           </p>
 
           <div className="hero__cta reveal" style={{ '--d': '.15s' } as React.CSSProperties}>
-            <a className="btn btn--dark btn--lg" href={telegramUrl} target="_blank" rel="noopener noreferrer">
+            <a
+              className="btn btn--accent btn--lg btn--arrow"
+              href={telegramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {t.common.discuss}
             </a>
             <a className="btn btn--ghost btn--lg" href="#cases">
@@ -30,6 +42,15 @@ export function Hero({ t }: { t: Dict }) {
             <span className="pulse" aria-hidden="true" />
             {t.hero.trust}
           </p>
+
+          <div className="hero__proof reveal" style={{ '--d': '.25s' } as React.CSSProperties}>
+            <span className="hero__proof-lbl">{t.hero.proofLabel}</span>
+            <ul className="hero__proof-list">
+              {liveDomains.map((domain) => (
+                <li key={domain}>{domain}</li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div
@@ -37,7 +58,7 @@ export function Hero({ t }: { t: Dict }) {
           style={{ '--d': '.2s' } as React.CSSProperties}
           aria-hidden="true"
         >
-          <div className="dots" />
+          <HeroCanvas />
           <div className="panel panel--code">
             <div className="panel__bar">
               <i />

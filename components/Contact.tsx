@@ -3,13 +3,13 @@ import { site, telegramUrl } from '@/content/site';
 
 export function Contact({ t }: { t: Dict }) {
   return (
-    <section className="section cta" id="contact">
+    <section className="section cta" id="contact" data-glow>
       <div className="container cta__inner reveal">
         <div className="cta__left">
           <h2 className="cta__title">{t.cta.title}</h2>
           <p className="cta__text">{t.cta.text}</p>
           <a
-            className="btn btn--accent btn--lg cta__btn"
+            className="btn btn--light btn--lg btn--arrow cta__btn"
             href={telegramUrl}
             target="_blank"
             rel="noopener noreferrer"

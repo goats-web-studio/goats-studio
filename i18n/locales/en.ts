@@ -4,7 +4,7 @@ export const en: Dict = {
   meta: {
     title: 'GOATS — websites and apps for business in Kazakhstan',
     description:
-      'We build websites, catalogues, mobile apps and Telegram bots end to end. Launch from 7 days, fixed price, 6 products live right now.',
+      'We build websites, catalogues, mobile apps and Telegram bots end to end. Launch from 7 days, fixed price, 5 products live right now.',
     ogTitle: 'GOATS — we build products people actually use',
   },
 
@@ -29,16 +29,17 @@ export const en: Dict = {
   },
 
   hero: {
-    eyebrow: 'Development studio · Aktau',
+    eyebrow: 'Development studio',
     titleStart: 'A website that',
     titleAccent: 'brings you clients',
     titleEnd: 'not one that just exists.',
     sub: 'We build websites, catalogues, mobile apps and Telegram bots for businesses in Kazakhstan. We take the idea, design it, ship it and stay around after launch.',
     trust: 'First call is free — we scope the work and give you a timeline and a price',
+    proofLabel: 'Live right now',
   },
 
   facts: [
-    { value: '6', label: 'products shipped and running' },
+    { value: '5', label: 'products shipped and running' },
     { value: 'from 7 days', label: 'to the first version going live' },
     { value: 'App Store', label: 'app published' },
     { value: 'Web · iOS · Android', label: 'platforms we build for' },
@@ -103,6 +104,7 @@ export const en: Dict = {
     includes: 'What is included',
     cta: 'Discuss this package',
     popular: 'Most popular',
+    guarantee: 'The estimate is free. The price goes into the contract and does not move mid-project.',
     items: {
       landing: {
         title: 'Landing page',
@@ -165,19 +167,12 @@ export const en: Dict = {
         value: 'App Store',
         label: 'app published — the menu updates without reprinting a single copy',
       },
-      nutrient: {
-        title: 'Nutrient',
-        kind: 'Web · AI',
-        task: 'Calculate intake and build meal plans automatically — by hand this took the specialist hours.',
-        value: '1 minute',
-        label: 'for a personal meal plan, instead of an hour of manual calculation',
-      },
       aquagym: {
         title: 'AquaGym',
         kind: 'Web · SEO',
-        task: 'Give the complex in Aktau a digital presence: until then clients only found it through friends and Instagram.',
+        task: 'Give the sports complex a digital presence: until then clients only found it through friends and Instagram.',
         value: 'Top 3',
-        label: 'in search for pool-related queries in Aktau — bookings go straight to WhatsApp',
+        label: 'in local search for pool-related queries — bookings go straight to WhatsApp',
       },
       gep: {
         title: 'Global Export Partners',
@@ -275,8 +270,8 @@ export const en: Dict = {
         a: 'Usually in two parts: a deposit before we start and the balance on handover. We work under a contract, with full accounting documents for companies.',
       },
       {
-        q: 'Do you only work with clients in Aktau?',
-        a: 'No. We work remotely across Kazakhstan and beyond — a call, a chat thread and a shared live link to the project.',
+        q: 'Where are you based, and does it matter?',
+        a: 'It does not. We work remotely across Kazakhstan and beyond: a call, a chat thread and a shared live link to the project — you can check progress at any point. No in-person meetings required.',
       },
       {
         q: 'What happens after launch?',
@@ -290,6 +285,10 @@ export const en: Dict = {
     text: 'Tell us what you need built. We will estimate the timeline and the cost — free, with no commitment.',
     reply: 'We usually reply within a day',
     contactsLabel: 'Direct contact',
+    strip: {
+      title: 'Want the same result for your business?',
+      note: 'Tell us about the problem — we come back with a timeline, a price and a plan for the first version.',
+    },
   },
 
   footer: {

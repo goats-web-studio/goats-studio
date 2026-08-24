@@ -47,7 +47,7 @@ export function Packages({ t, locale }: { t: Dict; locale: Locale }) {
                 </ul>
 
                 <a
-                  className={`btn ${pkg.featured ? 'btn--accent' : 'btn--ghost'} plan__cta`}
+                  className={`btn ${pkg.featured ? 'btn--accent btn--arrow' : 'btn--ghost'} plan__cta`}
                   href={telegramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -58,6 +58,11 @@ export function Packages({ t, locale }: { t: Dict; locale: Locale }) {
             );
           })}
         </div>
+
+        <p className="plans__foot reveal">
+          <span className="pulse" aria-hidden="true" />
+          {t.packages.guarantee}
+        </p>
       </div>
     </section>
   );
