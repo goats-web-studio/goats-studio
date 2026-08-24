@@ -27,6 +27,8 @@ export type CaseItem = {
   /** Зеркальная раскладка для второго крупного кейса. */
   reversed?: boolean;
   phone?: boolean;
+  /** Картинка уже содержит рамку устройства — показываем без нашего мокапа. */
+  promo?: boolean;
   /** Число для анимации счётчика, если результат — цифра. */
   count?: number;
 };
@@ -36,7 +38,7 @@ export const cases: CaseItem[] = [
     id: 'triathlon',
     href: 'https://www.mangystau-triathlon.kz',
     domain: 'mangystau-triathlon.kz',
-    shot: '/cases/triathlon.png',
+    shot: '/cases/triathlon.jpg',
     stack: 'Next.js · Supabase · Tailwind · Vercel',
     featured: true,
     count: 70,
@@ -45,22 +47,27 @@ export const cases: CaseItem[] = [
     id: 'carte',
     href: 'https://apps.apple.com/kz/app/carte-qr-%D0%BC%D0%B5%D0%BD%D1%8E/id6783817848',
     domain: null,
-    shot: '/cases/carte.png',
+    /* Официальный промо-кадр из App Store: рамка телефона уже внутри картинки. */
+    shot: '/cases/carte.jpg',
     stack: 'Flutter · Golang',
     phone: true,
+    promo: true,
   },
   {
     id: 'nutrient',
     href: 'https://nutrient.10k.kz/login',
     domain: 'nutrient.10k.kz',
-    shot: '/cases/nutrient.png',
+    /* Скриншота нет намеренно: сайт отдаётся с просроченным сертификатом
+       и брендирован «Joozlet», а за логином ничего публичного нет.
+       Пока файла нет — показывается CSS-макет. */
+    shot: '/cases/nutrient.jpg',
     stack: 'Vue 3 · PHP · AI',
   },
   {
     id: 'aquagym',
     href: 'https://www.aqua-gym.kz',
     domain: 'aqua-gym.kz',
-    shot: '/cases/aquagym.png',
+    shot: '/cases/aquagym.jpg',
     stack: 'Next.js · Tailwind · Vercel · SEO',
     featured: true,
     reversed: true,
@@ -69,14 +76,14 @@ export const cases: CaseItem[] = [
     id: 'gep',
     href: 'https://globalexportpartners.kz/',
     domain: 'globalexportpartners.kz',
-    shot: '/cases/gep.png',
+    shot: '/cases/gep.jpg',
     stack: 'Vue 3 · Node.js',
   },
   {
     id: 'smartziyatker',
     href: 'https://smartziyatker.kz/',
     domain: 'smartziyatker.kz',
-    shot: '/cases/smartziyatker.png',
+    shot: '/cases/smartziyatker.jpg',
     stack: 'React · Python',
   },
 ];

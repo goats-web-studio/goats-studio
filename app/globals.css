@@ -508,6 +508,16 @@ body.nav-open .burger span:last-child{transform:translateY(-3.25px) rotate(-45de
   border:6px solid var(--ink);border-bottom:0;
 }
 
+/* Промо-кадр из стора: рамка устройства нарисована в самой картинке,
+   свою не добавляем — иначе телефон в телефоне. */
+.mock--promo{
+  width:min(58%,240px);
+  border:0;
+  border-radius:14px 14px 0 0;
+  background:transparent;
+  box-shadow:0 24px 44px -30px rgba(0,0,0,.45);
+}
+
 .mock__bar{
   display:flex;align-items:center;gap:5px;
   height:30px;padding:0 12px;

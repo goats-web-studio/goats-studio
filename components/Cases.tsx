@@ -84,7 +84,11 @@ function Case({ item, t }: { item: CaseItem; t: Dict }) {
   return (
     <a className={className} href={item.href} target="_blank" rel="noopener noreferrer">
       <div className="case__media">
-        <div className={`mock ${item.phone ? 'mock--phone' : 'mock--browser'}`}>
+        <div
+          className={`mock ${item.phone ? 'mock--phone' : 'mock--browser'}${
+            item.promo ? ' mock--promo' : ''
+          }`}
+        >
           {item.domain && (
             <div className="mock__bar">
               <i />
