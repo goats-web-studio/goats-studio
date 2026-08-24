@@ -531,11 +531,18 @@ body.nav-open .burger span:last-child{transform:translateY(-3.25px) rotate(-45de
   overflow:hidden;white-space:nowrap;text-overflow:ellipsis;
 }
 
-/* Скриншот показываем только когда он реально загрузился, иначе живёт CSS-макет. */
-.mock__shot{display:none}
-.mock__shot.is-loaded{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
-.mock__shot.is-loaded.has-chrome{height:calc(100% - 30px)}
-.mock:has(.mock__shot.is-loaded) .mock__skeleton{display:none}
+/* Скриншот лежит поверх CSS-макета и проявляется, когда загрузился.
+   display:none здесь использовать нельзя: вместе с loading="lazy" элемент
+   без блока никогда не пересечёт вьюпорт и картинка не начнёт грузиться. */
+.mock__shot{
+  position:absolute;inset:0;z-index:1;
+  width:100%;height:100%;
+  object-fit:cover;object-position:top center;
+  opacity:0;
+  transition:opacity .35s var(--ease);
+}
+.mock__shot.has-chrome{top:30px;height:calc(100% - 30px)}
+.mock__shot.is-loaded{opacity:1}
 
 .mock__skeleton{display:flex;flex-direction:column;gap:12px;padding:20px}
 .mock__skeleton .bar{display:block;height:52px;border-radius:8px;background:var(--bg-soft)}

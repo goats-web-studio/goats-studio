@@ -55,11 +55,9 @@ export const cases: CaseItem[] = [
   },
   {
     id: 'nutrient',
-    href: 'https://nutrient.10k.kz/login',
+    /* /home, а не /login: экран входа как витрина кейса ничего не показывает. */
+    href: 'https://nutrient.10k.kz/home',
     domain: 'nutrient.10k.kz',
-    /* Скриншота нет намеренно: сайт отдаётся с просроченным сертификатом
-       и брендирован «Joozlet», а за логином ничего публичного нет.
-       Пока файла нет — показывается CSS-макет. */
     shot: '/cases/nutrient.jpg',
     stack: 'Vue 3 · PHP · AI',
   },
