@@ -4,14 +4,9 @@
 export const site = {
   url: 'https://goats-studio.vercel.app',
   telegram: 'Ram_1465',
-  /* TODO: подставьте рабочий номер WhatsApp. whatsapp — для ссылки (без + и пробелов),
-     whatsappDisplay — то, что видит посетитель. */
-  whatsapp: '77000000000',
-  whatsappDisplay: '+7 700 000 00 00',
 } as const;
 
 export const telegramUrl = `https://t.me/${site.telegram}`;
-export const whatsappUrl = `https://wa.me/${site.whatsapp}`;
 
 export type CaseId =
   | 'triathlon'

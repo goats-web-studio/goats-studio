@@ -20,7 +20,6 @@ export const en: Dict = {
     discuss: 'Discuss a project',
     ourWork: 'See our work',
     telegram: 'Message on Telegram',
-    whatsapp: 'Message on WhatsApp',
     menu: 'Menu',
     skip: 'Skip to content',
     home: 'Back to home',
@@ -112,7 +111,7 @@ export const en: Dict = {
         features: [
           'Design built around your business, no templates',
           'Responsive on phone and tablet',
-          'WhatsApp and Telegram buttons',
+          'Telegram contact button',
           'Basic SEO setup and domain connection',
         ],
       },
@@ -290,7 +289,7 @@ export const en: Dict = {
     title: 'Got an idea\nor a problem?',
     text: 'Tell us what you need built. We will estimate the timeline and the cost — free, with no commitment.',
     reply: 'We usually reply within a day',
-    contactsLabel: 'Reach us whichever way suits you',
+    contactsLabel: 'Direct contact',
   },
 
   footer: {
